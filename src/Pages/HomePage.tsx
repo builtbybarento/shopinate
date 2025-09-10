@@ -1,20 +1,26 @@
 
 import './HomePage.css'
 import { Header } from '../components/Header'
-
+import HomeFavicon from "../assets/images/favicons/home-favicon.png"
+import CottonSocks from "../assets/images/products/athletic-cotton-socks-6-pairs.jpg"
+import Rating45 from "../assets/images/ratings/rating-45.png"
+import Checkmark from "../assets/images/icons/checkmark.png"
+import Basketball from "../assets/images/products/intermediate-composite-basketball.jpg"
+import Rating40 from "../assets/images/ratings/rating-40.png"
+import TealShirts from "../assets/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
 
 export function HomePage(){
     return (
         <>
             <title>E-Commerce Website</title>
-            <link rel="icon" type="image/png" href="/images/favicons/home-favicon.png" />
+            <link rel="icon" type="image/png" href={HomeFavicon} />
             <Header/>
             <div className="home-page">
             <div className="products-grid">
                 <div className="product-container">
                 <div className="product-image-container">
                     <img className="product-image"
-                    src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+                    src={CottonSocks}/>
                 </div>
 
                 <div className="product-name limit-text-to-2-lines">
@@ -23,7 +29,7 @@ export function HomePage(){
 
                 <div className="product-rating-container">
                     <img className="product-rating-stars"
-                    src="images/ratings/rating-45.png" />
+                    src={Rating45} />
                     <div className="product-rating-count link-primary">
                     87
                     </div>
@@ -51,7 +57,7 @@ export function HomePage(){
                 <div className="product-spacer"></div>
 
                 <div className="added-to-cart">
-                    <img src="images/icons/checkmark.png" />
+                    <img src={Checkmark} />
                     Added
                 </div>
 
@@ -63,7 +69,7 @@ export function HomePage(){
                 <div className="product-container">
                 <div className="product-image-container">
                     <img className="product-image"
-                    src="images/products/intermediate-composite-basketball.jpg" />
+                    src={Basketball} />
                 </div>
 
                 <div className="product-name limit-text-to-2-lines">
@@ -72,7 +78,7 @@ export function HomePage(){
 
                 <div className="product-rating-container">
                     <img className="product-rating-stars"
-                    src="images/ratings/rating-40.png" />
+                    src={Rating40} />
                     <div className="product-rating-count link-primary">
                     127
                     </div>
@@ -100,7 +106,7 @@ export function HomePage(){
                 <div className="product-spacer"></div>
 
                 <div className="added-to-cart">
-                    <img src="images/icons/checkmark.png" />
+                    <img src={Checkmark}/>
                     Added
                 </div>
 
@@ -112,7 +118,7 @@ export function HomePage(){
                 <div className="product-container">
                 <div className="product-image-container">
                     <img className="product-image"
-                    src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
+                    src={TealShirts} />
                 </div>
 
                 <div className="product-name limit-text-to-2-lines">
@@ -121,7 +127,7 @@ export function HomePage(){
 
                 <div className="product-rating-container">
                     <img className="product-rating-stars"
-                    src="images/ratings/rating-45.png" />
+                    src={Rating45} />
                     <div className="product-rating-count link-primary">
                     56
                     </div>
@@ -149,7 +155,7 @@ export function HomePage(){
                 <div className="product-spacer"></div>
 
                 <div className="added-to-cart">
-                    <img src="images/icons/checkmark.png" />
+                    <img src={Checkmark} />
                     Added
                 </div>
 

@@ -1,11 +1,16 @@
 import { Header } from '../components/Header'
 import './Orders.css'
+import OrdersFavicon from "../assets/images/favicons/orders-favicon.png"
+import CottonSocks from "../assets/images/products/athletic-cotton-socks-6-pairs.jpg"
+import BuyAgain from "../assets/images/icons/buy-again.png"
+import TealShirts from "../assets/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+import Basketball from "../assets/images/products/intermediate-composite-basketball.jpg"
 
 export function Orders() {
     return (
         <>
             <title>Orders</title>
-            <link rel="icon" type="image/png" href="/images/favicons/orders-favicon.png" />
+            <link rel="icon" type="image/png" href={OrdersFavicon} />
             <Header current="Orders"/>
 
             <div className="orders-page">
@@ -34,7 +39,7 @@ export function Orders() {
 
                         <div className="order-details-grid">
                             <div className="product-image-container">
-                                <img src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+                                <img src={CottonSocks} />
                             </div>
 
                             <div className="product-details">
@@ -48,7 +53,7 @@ export function Orders() {
                                     Quantity: 1
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={BuyAgain} />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>
@@ -62,7 +67,7 @@ export function Orders() {
                             </div>
 
                             <div className="product-image-container">
-                                <img src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
+                                <img src={TealShirts} />
                             </div>
 
                             <div className="product-details">
@@ -76,7 +81,7 @@ export function Orders() {
                                     Quantity: 2
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={BuyAgain} />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>
@@ -113,7 +118,7 @@ export function Orders() {
 
                         <div className="order-details-grid">
                             <div className="product-image-container">
-                                <img src="images/products/intermediate-composite-basketball.jpg" />
+                                <img src={Basketball} />
                             </div>
 
                             <div className="product-details">
@@ -127,7 +132,7 @@ export function Orders() {
                                     Quantity: 2
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={BuyAgain} />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>

@@ -1,11 +1,14 @@
 import { CheckoutHeader } from './CheckoutHeader'
 import './Checkout.css'
+import CartFavicon from "../../assets/images/favicons/cart-favicon.png"
+import AthleticSocks from "../../assets/images/products/athletic-cotton-socks-6-pairs.jpg"
+import Basketball from "../../assets/images/products/intermediate-composite-basketball.jpg"
 
 export function Checkout() {
     return (
         <>
             <title>Checkout</title>
-            <link rel="icon" type="image/png" href="/images/favicons/cart-favicon.png" />
+            <link rel="icon" type="image/png" href={CartFavicon} />
             <CheckoutHeader />
             <div className="checkout-page">
                 <div className="page-title">Review your order</div>
@@ -19,7 +22,7 @@ export function Checkout() {
 
                             <div className="cart-item-details-grid">
                                 <img className="product-image"
-                                    src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+                                    src={AthleticSocks} />
 
                                 <div className="cart-item-details">
                                     <div className="product-name">
@@ -95,7 +98,7 @@ export function Checkout() {
 
                             <div className="cart-item-details-grid">
                                 <img className="product-image"
-                                    src="images/products/intermediate-composite-basketball.jpg" />
+                                    src={Basketball} />
 
                                 <div className="cart-item-details">
                                     <div className="product-name">
